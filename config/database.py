@@ -31,11 +31,11 @@ load_dotenv(find_dotenv())
 DATABASES = {
     'default': {
         'driver': os.environ.get('DB_DRIVER'),
-        'host': os.environ.get('DB_HOST'),
+        # 'host': os.environ.get('DB_HOST'),
         'database': os.environ.get('DB_DATABASE'),
-        'user': os.environ.get('DB_USERNAME'),
-        'password': os.environ.get('DB_PASSWORD'),
-        'prefix': ''
+        # 'user': os.environ.get('DB_USERNAME'),
+        # 'password': os.environ.get('DB_PASSWORD'),
+        # 'prefix': ''
     }
 }
 

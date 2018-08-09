@@ -1,1 +1,18 @@
-This is a Blog
+<link href="/static/blog.css" rel="stylesheet"/>
+{% if auth() %}
+  <form action="/blog/create" method="POST">
+    {{ csrf_field|safe }}
+
+    <label for=""> Title </label>
+    <input type="name" name="title"><br/>
+
+    <label for="">Body</label>
+    <textarea name="body"></textarea>
+
+    <input type="submit" value="Post!"/>
+
+  </form>
+{% else %}
+  <a href="/login">Please Login</a>
+{% endif %}
+<script src="/static/script.js"></script>

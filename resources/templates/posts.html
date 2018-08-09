@@ -1,0 +1,7 @@
+{% for post in posts %}
+  {{ post.title }} by {{ post.author.name }}
+  <br>
+  <a href="/post/{{post.id}}">show</a>
+  <a href="/post/{{post.id}}/update">update</a>
+  <hr>
+{% endfor %}
